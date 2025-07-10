@@ -16,20 +16,21 @@ The goal of LAAF is to implement changes that I feel improve the user experience
 Changes directly made to the codebase will be initiated with and mostly undertaken by Void Agent/DeepSeek. Given the nature of the changes, which may be breaking with LMMS, the general unpredictability of changes made using AI, and the fact that this fork aims to mirror the pre-release codebase, this fork is very much experimental and should not be considered stable. This fork is entirely about exploring limits in making complex changes to a large preexisting codebase, which is something I have never done before. This isn't about grasping for accolades; I just want to make my favorite program think a bit more like I do.
 
 ## Proposed Changes:
-- [x] Importing a sample (if it's fairly long/more than a few bars) crops the sample
-- [ ] The mixer panel no longer allows for the labels to be expanded
-- [ ] No swing option for tempo in the pattern editor
-- [ ] No option to change file paths of samples in save files
-- [ ] Default theme is not frutiger aero
-- [ ] The pack-in delay effect is hard to use and fiddly for fine-tuned effects
+- [x] Remove the feature where importing a sample (if it's fairly long/more than a few bars) crops the sample
+- [ ] Rebrand program to allow installation alongside LMMS
+- [ ] Allow for mixer panel labels to be expanded with the window
+- [ ] Add swing option for tempo in the pattern editor
+- [ ] Add option to change file paths of samples in save files
+- [ ] Add legacy theme elements to make program feel more *Frutiger Aero™*
+- [ ] Overhaul the Delay effect with finer control over time intervals
 - [ ] Add Vitalium to default instruments
 - [ ] Add ChowDSP effects
 - [ ] No VST3 support/Add Element code directly to LMMS (similar to CARLA) for VST3 native support
-- [ ] No obvious way to add MIDI input to effects from a piano roll track
+- [ ] Explore adding MIDI input for effect plugins
 - [ ] Get LPC.LV2 working on Windows and add it as an effect https://github.com/lewark/lpc.lv2
-- [ ] Add Dexed with DX7 patch generator as pack-in instrument
+- [ ] Add Dexed with [NeuralDX7](https://github.com/Nintorac/NeuralDX7) as a pack-in instrument
 - [ ] Create some sort of AI or vocaloid-type program as a default instrument
-- [ ] Integrated Demucs support from UVR
+- [ ] Integrated Demucs support
 
 ## Features
 
