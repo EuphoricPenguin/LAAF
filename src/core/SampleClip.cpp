@@ -250,16 +250,11 @@ void SampleClip::setIsPlaying(bool isPlaying)
 
 void SampleClip::updateLength()
 {
-	// If the clip has already been manually resized, don't automatically resize it.
-	// Unless we are in a pattern, where you can't resize stuff manually
-	if (getAutoResize() || !getResizable())
-	{
-		changeLength(sampleLength());
-		setStartTimeOffset(0);
-	}
+	// Always set the clip length to match the sample length when updating
+	changeLength(sampleLength());
+	setStartTimeOffset(0);
 
 	emit sampleChanged();
-
 	Engine::getSong()->setModified();
 }
 

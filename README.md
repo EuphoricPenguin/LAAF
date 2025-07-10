@@ -1,37 +1,34 @@
 <div align="center">
 	<h1>
-	<img src="https://raw.githubusercontent.com/LMMS/artwork/master/Icon%20%26%20Mimetypes/lmms-64x64.svg" alt="LMMS Logo"><br>LMMS
+	<img src="./LAAF Logo.png" width=100px alt="LAAF Logo"><br>LAAF
 	</h1>
-	<p>Cross-platform music production software</p>
-	<p>
-		<a href="https://lmms.io/">Website</a>
-		⦁︎
-		<a href="https://github.com/LMMS/lmms/releases">Releases</a>
-		⦁︎
-		<a href="https://github.com/LMMS/lmms/wiki">Developer wiki</a>
-		⦁︎
-		<a href="https://lmms.io/documentation">User manual</a>
-		⦁︎
-		<a href="https://lmms.io/showcase/">Showcase</a>
-		⦁︎
-		<a href="https://lmms.io/lsp/">Sharing platform</a>
-	</p>
-	<p>
-		<a href="https://github.com/LMMS/lmms/actions/workflows/build.yml"><img src="https://github.com/LMMS/lmms/actions/workflows/build.yml/badge.svg" alt="Build status"></a>
-		<a href="https://lmms.io/download"><img src="https://img.shields.io/github/release/LMMS/lmms.svg?maxAge=3600" 	alt="Latest stable release"></a>
-		<a href="https://github.com/LMMS/lmms/releases"><img src="https://img.shields.io/github/downloads/LMMS/lmms/total.svg?maxAge=3600" alt="Overall downloads on Github"></a>
-		<a href="https://discord.gg/3sc5su7"><img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Join the chat at Discord"></a>
-		<a href="https://www.transifex.com/lmms/lmms/"><img src="https://img.shields.io/badge/localise-on_transifex-green.svg"></a>
-	</p>
+	<p>LMMS AI-Assisted Fork</p>
 </div>
 
-What is LMMS?
---------------
+## What is LAAF?
 
-LMMS is an open-source cross-platform digital audio workstation designed for music production. It includes an advanced Piano Roll, Beat Sequencer, Song Editor, and Mixer for composing, arranging, and mixing music. It comes with 15+ synthesizer plugins by default, along with VST(i) and SoundFont2 support.
+LAAF is an open-source fork of [LMMS](https://github.com/LMMS) with the philosophy of creating experimental changes and building for x64 Windows.
+The goal of LAAF is to implement changes that I feel improve the user experience, take risks with redefining the included software, and generally
+reshape the program into something new and interesting. LMMS as a DAW is mature and very usable in its own right, but small annoyances have made me
+curious how far I could get at maintaining a fork. LAAF isn't supposed to be a flex; I just want to customize my favorite FOSS program.
 
-Features
----------
+## Here are some of the things I'm aiming to slowly implement/fix:
+1. Importing a sample (if it's fairly long/more than a few bars) crops the sample
+2. The mixer panel no longer allows for the labels to be expanded
+4. No swing option for tempo in the pattern editor
+5. No option to change file paths of samples in save files
+6. Default theme is not frutiger aero
+7. The pack-in delay effect is hard to use and fiddly for fine-tuned effects
+8. Add Vitalium to default instruments
+9. Add ChowDSP effects
+10. No VST3 support/Add Element code directly to LMMS (similar to CARLA) for VST3 native support
+11. No obvious way to add MIDI input to effects from a piano roll track
+12. Get LPC.LV2 working on Windows and add it as an effect https://github.com/lewark/lpc.lv2
+13. Add Dexed with DX7 patch generator as pack-in instrument
+14. Create some sort of AI or vocaloid-type program as a default instrument
+15. Integrated Demucs support from UVR
+
+## Features
 
 * Song-Editor for arranging melodies, samples, patterns, and automation
 * Pattern-Editor for creating beats and patterns
@@ -42,16 +39,6 @@ Features
 * Compatible with many standards such as SoundFont2, VST(i), LADSPA, GUS Patches, and full MIDI support
 * MIDI file importing and exporting
 
-Building
----------
+## Building
 
-See [Compiling LMMS](https://github.com/LMMS/lmms/wiki/Compiling)
-
-Join LMMS-development
-----------------------
-
-If you are interested in LMMS, its programming, artwork, testing, writing demo songs, (and improving this README...) or something like that, you're welcome to participate in the development of LMMS!
-
-Information about what you can do and how can be found in the [wiki](https://github.com/LMMS/lmms/wiki).
-
-Before coding a new big feature, please _always_ [file an issue](https://github.com/LMMS/lmms/issues/new) for your idea and suggestions about your feature and about the intended implementation on GitHub, or ask in one of the tech channels on Discord and wait for replies! Maybe there are different ideas, improvements, or hints, or maybe your feature is not welcome/needed at the moment.
+See [Compiling LMMS using MSYS2](https://github.com/LMMS/lmms/wiki/dependencies-windows#windows-msys2)
