@@ -13,7 +13,7 @@ reshape the program into something new and interesting. LMMS as a DAW is mature 
 curious how far I could get at maintaining a fork. LAAF isn't supposed to be a flex; I just want to customize my favorite FOSS program.
 
 ## Here are some of the things I'm aiming to slowly implement/fix:
-1. Importing a sample (if it's fairly long/more than a few bars) crops the sample
+~~1. Importing a sample (if it's fairly long/more than a few bars) crops the sample~~
 2. The mixer panel no longer allows for the labels to be expanded
 4. No swing option for tempo in the pattern editor
 5. No option to change file paths of samples in save files

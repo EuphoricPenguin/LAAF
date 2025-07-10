@@ -1,2 +1,1 @@
-7/9/25: SampleClip.cpp was modified to remove getAutoResize() conditional statement. This was done to remove cropping of imported sample clips.
-A build and test indicated this change was a success
+7/9/25: SampleClip.cpp was modified to remove getAutoResize() conditional statement. This was done to remove cropping of imported sample clips. A build and test indicated this change was a success.
