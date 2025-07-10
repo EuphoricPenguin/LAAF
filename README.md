@@ -45,3 +45,5 @@ Changes directly made to the codebase will be initiated with and mostly undertak
 ## Building
 
 See [Compiling LMMS using MSYS2](https://github.com/LMMS/lmms/wiki/dependencies-windows#windows-msys2)
+
+Prebuilt binaries for Windows x64 will be sporadically provided [here.](https://github.com/EuphoricPenguin/LAAF/releases)
