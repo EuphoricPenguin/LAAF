@@ -3,7 +3,8 @@
  *
  * Copyright (c) 2005-2014 Tobias Doerffel <tobydox/at/users.sourceforge.net>
  *
- * This file is part of LMMS - https://lmms.io
+ * This file is part of LAAF, a fork of LMMS - https://lmms.io
+ * Modified on 2025-09-17: Updated installation paths from lmms to laaf
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -86,7 +87,7 @@ ConfigManager::ConfigManager() :
 #ifdef LMMS_BUILD_WIN32
 	QDir::addSearchPath("data", qApp->applicationDirPath() + "/data/");
 #else
-	QDir::addSearchPath("data", qApp->applicationDirPath().section('/', 0, -2) + "/share/lmms/");
+	QDir::addSearchPath("data", qApp->applicationDirPath().section('/', 0, -2) + "/share/laaf/");
 #endif
 
 }
@@ -706,8 +707,8 @@ void ConfigManager::initPortableWorkingDir()
 
 void ConfigManager::initInstalledWorkingDir()
 {
-	m_workingDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/lmms/";
-	m_lmmsRcFile = QDir::home().absolutePath() +"/.lmmsrc.xml";
+	m_workingDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/LAAF/";
+	m_lmmsRcFile = QDir::home().absolutePath() +"/.laafrc.xml";
 	// Detect < 1.2.0 working directory as a courtesy
 	if ( QFileInfo( QDir::home().absolutePath() + "/lmms/projects/" ).exists() )
 		m_workingDir = QDir::home().absolutePath() + "/lmms/";

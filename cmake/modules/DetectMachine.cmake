@@ -1,3 +1,18 @@
+# This file is part of LAAF, a fork of LMMS.
+# Modified on 2025-09-17: Updated installation directory paths from lmms to laaf
+# LAAF is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# LAAF is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with LAAF.  If not, see <https://www.gnu.org/licenses/>.
+
 IF(WIN32)
 	SET(LMMS_BUILD_WIN32 1)
 ELSEIF(APPLE)
@@ -156,9 +171,9 @@ IF(LMMS_BUILD_WIN32)
 	SET(LMMS_DATA_DIR data)
 ELSE(LMMS_BUILD_WIN32)
 	SET(BIN_DIR bin)
-	SET(PLUGIN_DIR ${LIB_DIR}/lmms)
+	SET(PLUGIN_DIR ${LIB_DIR}/laaf)
 	SET(DATA_DIR share)
-	SET(LMMS_DATA_DIR ${DATA_DIR}/lmms)
+	SET(LMMS_DATA_DIR ${DATA_DIR}/laaf)
 ENDIF(LMMS_BUILD_WIN32)
 
 IF(LMMS_BUILD_APPLE)
