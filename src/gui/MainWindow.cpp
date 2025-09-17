@@ -3,7 +3,8 @@
  *
  * Copyright (c) 2004-2014 Tobias Doerffel <tobydox/at/users.sourceforge.net>
  *
- * This file is part of LMMS - https://lmms.io
+ * This file is part of LAAF, a fork of LMMS - https://lmms.io
+ * Modified on 2025-09-17: Updated window title from LMMS to LAAF
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -590,7 +591,7 @@ void MainWindow::resetWindowTitle()
 		title += " - " + tr( "Recover session. Please save your work!" );
 	}
 
-	setWindowTitle( title + " - " + tr( "LMMS %1" ).arg( LMMS_VERSION ) );
+	setWindowTitle( title + " - " + tr( "LAAF %1" ).arg( LMMS_VERSION ) );
 }
 
 

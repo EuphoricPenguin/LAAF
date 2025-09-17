@@ -1,6 +1,21 @@
+# This file is part of LAAF, a fork of LMMS.
+# Modified on 2025-09-17: Updated XML file reference from lmms.xml to laaf.xml
+# LAAF is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# LAAF is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with LAAF.  If not, see <https://www.gnu.org/licenses/>.
+
 install(DIRECTORY icons/ DESTINATION "${DATA_DIR}/icons/hicolor")
 install(FILES lmms.desktop DESTINATION "${DATA_DIR}/applications")
-install(FILES lmms.xml DESTINATION "${DATA_DIR}/mime/packages")
+install(FILES laaf.xml DESTINATION "${DATA_DIR}/mime/packages")
 
 # Preserve old CPack behavior
 if(WANT_CPACK_TARBALL)

@@ -1,3 +1,18 @@
+# This file is part of LAAF, a fork of LMMS.
+# Modified on 2025-09-17: Added PROJECT_DISPLAY_NAME variables for LAAF branding
+# LAAF is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# LAAF is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with LAAF.  If not, see <https://www.gnu.org/licenses/>.
+
 CMAKE_MINIMUM_REQUIRED(VERSION 3.13)
 SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
@@ -46,13 +61,15 @@ INCLUDE(GenerateExportHeader)
 include(StaticDependencies)
 
 STRING(TOUPPER          "${CMAKE_PROJECT_NAME}" PROJECT_NAME_UCASE)
+SET(PROJECT_DISPLAY_NAME  "LAAF")
+SET(PROJECT_DISPLAY_NAME_UCASE "LAAF")
 
 SET(PROJECT_YEAR 2025)
 
-SET(PROJECT_AUTHOR      "LMMS Developers")
+SET(PROJECT_AUTHOR      "LAAF Developers")
 SET(PROJECT_URL         "https://lmms.io")
 SET(PROJECT_EMAIL       "lmms-devel@lists.sourceforge.net")
-SET(PROJECT_DESCRIPTION "${PROJECT_NAME_UCASE} - Free music production software")
+SET(PROJECT_DESCRIPTION "${PROJECT_DISPLAY_NAME_UCASE} - Free music production software")
 SET(PROJECT_COPYRIGHT   "2008-${PROJECT_YEAR} ${PROJECT_AUTHOR}")
 SET(VERSION_MAJOR       "1")
 SET(VERSION_MINOR       "3")
