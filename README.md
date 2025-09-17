@@ -17,7 +17,9 @@ Changes directly made to the codebase will be initiated with and mostly undertak
 
 ## Proposed Changes:
 - [x] Remove the feature where importing a sample (if it's fairly long/more than a few bars) crops the sample
-- [ ] Rebrand program to allow installation alongside LMMS
+- [X] Add new sample library to replace old samples
+- [X] Rebrand program to allow installation alongside LMMS
+- [ ] Add custom theme for LAAF with logo and yellow primary color
 - [ ] Allow for mixer panel labels to be expanded with the window
 - [ ] Add swing option for tempo in the pattern editor
 - [ ] Add option to change file paths of samples in save files
